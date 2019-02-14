@@ -173,6 +173,7 @@ form>input:nth-of-type(3){
     margin: 0;
 }
 .phone>input{
+    display: inline-block;
     height: 50px;
     border: none;
 }
@@ -336,10 +337,10 @@ footer{
         width: 90%;
         margin-top: 40px;
     }
-    .phone>input:last-child {
+    /* .phone>input:last-child {
         width: calc(100% - 143.5px);
         padding-left: 15px;
-    }
+    } */
     .offer_items{
         flex-direction: column;
     }
