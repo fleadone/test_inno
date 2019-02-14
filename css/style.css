@@ -185,7 +185,7 @@ form>input:nth-of-type(3){
     background-position: 15px 15px;
 }
 .phone>input:last-child{
-    width: calc(100% - 142px);
+    width: calc(100% - 145px);
     padding-left: 15px;
 }
 .btn{
