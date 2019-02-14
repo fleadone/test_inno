@@ -1,0 +1,439 @@
+/* --------------------- flex ---------------------- */
+
+.flex_col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex_row{
+    display: flex;
+    flex-direction: row;
+}
+
+/* --------------------- container ---------------------- */
+
+.container{
+    width: 1065px;
+}
+
+/* --------------------- wrapper ---------------------- */
+
+.wrapper{
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* --------------------- header ---------------------- */
+
+header{
+    width: 100%;
+    background-image: url(../img/bg_header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header .container{
+    justify-content: space-between;
+}
+
+/* ------------ left_side ------------- */
+
+.left_side{
+    align-items: flex-start;
+}
+
+
+/* ------- headline ------ */
+
+
+.headline{
+    padding: 50px 0 30px 0;
+}
+.headline>h1, .headline>h3{
+    font-weight: 800;
+    font-size: 3.125em;
+    margin: 0;
+}
+.headline>h3{
+    background-color: #339999;
+    padding: 4px 10px 4px 10px;
+    margin-left: -10px;
+    color: #fff;
+    font-size: 1.875em;
+}
+
+/* ------- desc ------ */
+
+.desc{
+    padding: 0 0 30px 0;
+}
+.desc>p, .desc>h3{
+    margin: 0;
+}
+.desc>p{
+    font-size: 1.250em;
+    font-weight: 700;
+}
+.desc>h3{
+    color: #339999;
+    font-size: 1.875em;
+}
+
+/* ------- image ------ */
+
+.image{
+    width: calc(100% + 20px);
+    height: 316px;
+    background-color: #666666;
+}
+
+
+/* ------------ right_side ------------- */
+
+
+.right_side{
+    width: 420px;
+    height: 775px;
+    background-color: #000000;
+}
+
+
+/* ------- logo ------ */
+
+.logo{
+    width: 212px;
+    height: 56px;
+    background-image: url(../img/logo.png);
+    margin: 60px 0 30px 0;
+}
+.top_text h4, .top_text p{
+    color: #fff;
+    text-align: center;
+    margin: 3px;
+}
+.top_text h4{
+    font-weight: 700;
+    font-size: 1.250em;
+}
+.top_text p{
+    font-weight: 400;
+    font-size: 0.875em;
+    margin: 10px 0 0 0;
+}
+
+/* ------- form ------ */
+
+form{
+    width: 100%;
+    margin: 25px 0 0 0;
+}
+form>input, form>button, .select>select{
+    display: block;
+    width: calc(85% - 50px);
+    height: 50px;
+    border: none;
+    margin-bottom: 10px;
+    padding-left: 50px;
+    background-repeat: no-repeat;
+    background-position: 15px 15px;
+}
+form>input:nth-of-type(1), form>input:nth-of-type(2){
+    background-image: url(../img/name_icon.png);
+}
+form>input:nth-of-type(3){
+    background-image: url(../img/mail_icon.png);
+    background-position: 15px 18px;
+}
+.select{
+    width: 85%;
+    position: relative;
+}
+.select select{
+    width: calc(100% + 1px);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    background-image: url(../img/country_icon.png);
+    background-position: 18px 15px;
+}
+.select::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 8px;
+    top: 20px;
+    right: 18px;
+    background-image: url(../img/arrow_down_icon.png);
+    z-index: 10;
+}
+.phone{
+    border: none;
+    width: calc(85% + 1px);
+    padding: 0;
+    margin: 0;
+}
+.phone>input{
+    height: 50px;
+    border: none;
+}
+.phone>input:first-child{
+    padding-left: 50px;
+    width: 70px;
+    background-image: url(../img/phone_icon.png);
+    background-repeat: no-repeat;
+    background-position: 15px 15px;
+}
+.phone>input:last-child{
+    width: calc(100% - 142px);
+    padding-left: 15px;
+}
+.btn{
+    width: 85%;
+    height: 59px;
+    margin: 30px 0 0 0;
+    padding: 0;
+    font-weight: 800;
+    font-size: 1.500em;
+    background-color: #c9fc33;
+    border-top: 1px solid #fff;
+    border-bottom: 4px solid #4d661a;
+    text-shadow: 1px 3px 2px #d6ef99;
+}
+
+/* ------- bottom_text ------ */
+
+.bottom_text{
+    width: 85%;
+    color: #fefdff;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+/* --------------------- main ---------------------- */
+
+
+main{
+    width: 100%;
+}
+
+/* ------------ offer ------------- */
+
+.offer{
+    width: 100%;
+    padding-bottom: 90px;
+    background-image: url(../img/bg_offer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* ------- offer_headline ------ */
+
+.offer_headline>h1{
+    font-weight: 800;
+    font-size: 1.875em;
+    margin: 60px 0 60px 0;
+}
+
+/* ------- offer_items ------ */
+
+.offer_items{
+    justify-content: space-between;
+}
+.item_desc{
+    text-align: center;
+}
+.item_desc>h5{
+    color: #339999;
+    font-weight: 800;
+    font-size: 1em;
+    margin: 30px 0 35px 0;
+}
+.item_desc>p{
+    list-style-type: disc;
+}
+.item_desc>p>span{
+    font-weight: 800;
+}
+.item:nth-child(3) .item_desc>p{
+    list-style:disc inside none;
+    display:list-item;
+
+}
+
+/* ------------ start ------------- */
+
+.start{
+    width: 100%;
+    padding-bottom: 55px;
+    background-image: url(../img/bg_start.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.start>h1{
+    font-weight: 800;
+    color: #fff;
+    margin: 60px 0 30px 0;
+}
+.btn_start{
+    width: 510px;
+    height: 100px;
+    padding: 0;
+    background-color: #c9fc33;
+    border: none;
+    border-top: 1px solid #fff;
+    border-bottom: 4px solid #4d661a;
+    text-shadow: 1px 3px 2px #d6ef99;
+    position: relative;
+    font-weight: 800;
+    font-size: 2.250em;
+    background-image: url(../img/arrow_start.png);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 41px) 30px;
+}
+
+/* --------------------- fotter ---------------------- */
+
+footer{
+    width: 100%;
+    background-color: #000000;
+}
+.fotter_text{
+    color: #666666;
+    font-size: 0.875em;
+    text-align: center;
+    max-width: 930px;
+    padding: 30px 0 80px 0;
+}
+
+
+@media only screen and (max-width : 1024px){
+    .container {
+        width: 970px;
+    }
+}
+@media only screen and (max-width : 768px){
+    .container {
+        width: 100%;
+    }
+    header>.container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .left_side {
+        align-items: center;
+        text-align: center;
+        width: 90%;
+    }
+    .headline>h3 {
+        margin-left: 0px;
+    }
+    .image {
+        width: 100%;
+    }
+    .right_side {
+        width: 90%;
+        margin-top: 40px;
+    }
+    .offer_items{
+        flex-direction: column;
+    }
+    .item{
+        padding: 0 0 50px 0;
+    }
+    .fotter_text {
+        max-width: 80%;
+    }
+}
+@media only screen and (max-width : 425px){
+    .left_side {
+        width: 95%;
+    }
+    .headline{
+        width: 100%;
+        padding: 20px 0 10px 0;
+    }
+    .headline>h1{
+        font-size: 1.125em;
+        display: inline-block;
+    }
+    .headline>h3 {
+        margin-top: 10px;
+        font-size: 0.875em;
+    }
+    .desc {
+        padding: 0 0 10px 0;
+    }
+    .desc>p {
+        font-size: 0.875em;
+    }
+    .desc>h3{
+        font-size: 1.250em;
+    }
+    .image {
+        height: 186px;
+    }
+    .right_side {
+        width: 100%;
+        height: 100%;
+        margin-top: 15px;
+    }
+    .logo {
+        width: 116px;
+        height: 30px;
+        background-size: cover;
+        margin: 20px 0 10px 0;
+    }
+    .top_text{
+        width: 90%;
+        text-align: center;
+    }
+    .top_text h4 {
+        font-size: 0.875em;
+        display: inline;
+    }
+    form>input, form>button, .select>select {
+        width: calc(95% - 50px);
+    }
+    .select {
+        width: 95%;
+    }
+    .select select {
+        width: calc(100% + 1px);
+    }
+    .phone {
+        width: calc(95% + 1px);
+    }
+    .btn {
+        width: 95%;
+    }
+    .bottom_text {
+        width: 95%;
+        margin: 5px 0 0 0;
+    }
+    .start>h1 {
+        font-size: 1.375em;
+    }
+    .btn_start {
+        width: 95%;
+        font-size: 1.500em;
+    }
+    .fotter_text {
+        max-width: 95%;
+        padding: 30px 0 35px 0;
+    }
+    .fotter_text>p{
+        display: inline;
+    }
+}
+@media only screen and (max-width : 320px){
+    .btn_start{
+        background-position: calc(100% - 25px) 32px;
+    }
+}
+
+
+
+
+
